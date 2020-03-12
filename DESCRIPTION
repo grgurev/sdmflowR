@@ -9,6 +9,6 @@ Authors@R:
            comment = c(ORCID = "0000-0001-6254-5557"))
 Description: Package to ease the flow in preparing data (both occurences and
     rasters) to use in species distribution modelling process.
-License: What license it uses
+License: MIT + file LICENSE
 Encoding: UTF-8
 LazyData: true
