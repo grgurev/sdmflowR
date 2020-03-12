@@ -4,17 +4,23 @@
 \alias{prepare_rasters}
 \title{Prepare rasters}
 \usage{
-prepare_rasters(folder, extent)
+prepare_rasters(folder_in, folder_out = folder_in, extent)
 }
 \arguments{
-\item{folder}{filename (character) or Raster object. Supported file types
+\item{folder_in}{filename (character) or Raster object. Supported file types
 are the ’native’ raster package format and those that can be read via rgdal}
 
+\item{folder_out}{filename (character). Folder where prepared data will be
+saved. Default is to save them in the same folder where original rasters are
+stored.}
+
 \item{extent}{Extent object, or any object from which an Extent object can
-be extracted}
+be extracted such as: a 2x2 matrix (first row: xmin, xmax; second row: ymin,
+ymax), vector (length=4; order= xmin, xmax, ymin, ymax) or list (with at
+least two elements, with names 'x' and 'y')}
 }
 \value{
-RasterStack
+New rasters prepared for analysis
 }
 \description{
 Prepare environmental raster layers by loading them from the folder and
