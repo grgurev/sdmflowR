@@ -2,3 +2,4 @@
 
 export(prepare_rasters)
 importFrom(magrittr,"%>%")
+importFrom(sp,"spTransform")

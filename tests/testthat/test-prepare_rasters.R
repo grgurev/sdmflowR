@@ -6,7 +6,7 @@ test_that("prepare_rasters return croppped asci raster", {
   raster::writeRaster(r, file.path(f_in, "test_raster.tif"), format="GTiff", overwrite=TRUE)
 
   e = raster::extent(c(0, 2, 0, 2))
-  prepare_rasters(f_in, f_out, extent = e)
+  prepare_rasters(f_in, f_out, extent = e, ref_raster = r)
   res = raster::raster(file.path(f_in, "test_raster.asc"))
 
   expect_equal(res@extent, e)

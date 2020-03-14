@@ -4,7 +4,7 @@
 \alias{prepare_rasters}
 \title{Prepare rasters}
 \usage{
-prepare_rasters(folder_in, folder_out = folder_in, extent)
+prepare_rasters(folder_in, folder_out = folder_in, extent, ref_raster)
 }
 \arguments{
 \item{folder_in}{filename (character) or Raster object. Supported file types
@@ -18,6 +18,9 @@ stored.}
 be extracted such as: a 2x2 matrix (first row: xmin, xmax; second row: ymin,
 ymax), vector (length=4; order= xmin, xmax, ymin, ymax) or list (with at
 least two elements, with names 'x' and 'y')}
+
+\item{ref_raster}{filename (character) or Raster object. Supported file types
+are the ’native’ raster package format and those that can be read via rgdal}
 }
 \value{
 New rasters prepared for analysis
