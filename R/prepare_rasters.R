@@ -5,7 +5,7 @@
 #' the same grid and extent and converted to ASCII rasters.
 #'
 #' @param folder_in filename (character) or Raster object. Supported file types
-#' are the ’native’ raster package format and those that can be read via rgdal
+#' are the "native" raster package format and those that can be read via rgdal
 #' @param folder_out filename (character). Folder where prepared data will be
 #' saved. Default is to save them in the same folder where original rasters are
 #' stored.
@@ -14,7 +14,7 @@
 #' ymax), vector (length=4; order= xmin, xmax, ymin, ymax) or list (with at
 #' least two elements, with names 'x' and 'y')
 #' @param ref_raster filename (character) or Raster object. Supported file types
-#' are the ’native’ raster package format and those that can be read via rgdal
+#' are the "native" raster package format and those that can be read via rgdal
 #'
 #' @return New rasters prepared for analysis
 #' @export

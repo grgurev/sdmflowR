@@ -8,7 +8,7 @@ prepare_rasters(folder_in, folder_out = folder_in, extent, ref_raster)
 }
 \arguments{
 \item{folder_in}{filename (character) or Raster object. Supported file types
-are the ’native’ raster package format and those that can be read via rgdal}
+are the "native" raster package format and those that can be read via rgdal}
 
 \item{folder_out}{filename (character). Folder where prepared data will be
 saved. Default is to save them in the same folder where original rasters are
@@ -20,7 +20,7 @@ ymax), vector (length=4; order= xmin, xmax, ymin, ymax) or list (with at
 least two elements, with names 'x' and 'y')}
 
 \item{ref_raster}{filename (character) or Raster object. Supported file types
-are the ’native’ raster package format and those that can be read via rgdal}
+are the "native" raster package format and those that can be read via rgdal}
 }
 \value{
 New rasters prepared for analysis
