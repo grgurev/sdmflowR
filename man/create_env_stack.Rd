@@ -10,14 +10,14 @@ create_env_stack(folder_in, env_subset = c())
 \item{folder_in}{filename (character) or Raster object. Supported file types
 are the "native" raster package format and those that can be read via rgdal}
 
-\item{env_subset}{vector of filenames without extension (character) that will be 
-processed and stacked}
+\item{env_subset}{vector of filenames without extension (character) that
+will be processed and stacked}
 }
 \value{
 Raster stack
 }
 \description{
-Create raster stack from environmental data so that raster stack by 
+Create raster stack from environmental data so that raster stack by
 providing folder where raster are stored and optionally subset of those
 raster that needs processing. It is mostly used when checking for NAs and in
 value extraction in generating absences and psudoabsences
