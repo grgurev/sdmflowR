@@ -2,7 +2,8 @@
 #'
 #' Prepare environmental raster layers by loading them from the folder and
 #' cropping to the project extent. In that process rasters are aligned to
-#' the same grid and extent and converted to ASCII rasters.
+#' the same grid and extent and converted to ASCII rasters. This function works 
+#' only for continuous rasters.
 #'
 #' @param folder_in filename (character) or Raster object. Supported file types
 #' are the "native" raster package format and those that can be read via rgdal
@@ -29,7 +30,7 @@ prepare_rasters = function(folder_in, folder_out = folder_in, extent, ref_raster
   ifelse(!dir.exists(folder_out), dir.create(folder_out), FALSE)
 
   # default projection is WGS84
-  default_proj = "+proj=longlat +datum=WGS84 +no_defs +ellps=WGS84 +towgs84=0,0,0"
+  default_proj = "+proj=longlat +datum=WGS84"
 
   # create sf object from the project extent
   extent_sp = methods::as(raster::extent(extent), 'SpatialPolygons')
