@@ -1,4 +1,4 @@
-test_that("prepare_rasters return croppped asci raster", {
+test_that("prepare_rasters returns croppped asci raster", {
   f_in = tempdir()
   f_out = f_in
 

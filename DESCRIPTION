@@ -1,6 +1,6 @@
 Package: sdmflowR
 Title: What the Package Does (One Line, Title Case)
-Version: 0.0.2
+Version: 0.0.0.9003
 Authors@R: 
     person(given = "Marin",
            family = "Grgurev",
@@ -20,4 +20,6 @@ Imports:
     raster,
     rgdal,
     magrittr,
-    sp
+    sp,
+    sf,
+    data.table
