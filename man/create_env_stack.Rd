@@ -21,6 +21,6 @@ Create raster stack from environmental data so that raster stack by
 providing folder where raster are stored and optionally subset of those
 raster that needs processing. It is just a wrapper around raster::stack()
 and used when you have subset of variables to try so that you can quickly
-check for NAs with check_na_data() function or value extraction when
+check for NAs with \code{check_na_data()} function or value extraction when
 generating absences and psudoabsences
 }
