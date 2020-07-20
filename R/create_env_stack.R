@@ -4,7 +4,7 @@
 #' providing folder where raster are stored and optionally subset of those
 #' raster that needs processing. It is just a wrapper around raster::stack()
 #' and used when you have subset of variables to try so that you can quickly
-#' check for NAs with `check_na_data()` function or value extraction when
+#' check for NAs with check_na_data() function or value extraction when
 #' generating absences and psudoabsences
 #'
 #' @param folder_in filename (character) or Raster object. Supported file types
