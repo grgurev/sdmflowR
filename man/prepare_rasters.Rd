@@ -28,6 +28,6 @@ New rasters prepared for analysis
 \description{
 Prepare environmental raster layers by loading them from the folder and
 cropping to the project extent. In that process rasters are aligned to
-the same grid and extent and converted to ASCII rasters. This function works 
+the same grid and extent and converted to ASCII rasters. This function works
 only for continuous rasters.
 }
