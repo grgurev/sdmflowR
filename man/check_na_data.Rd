@@ -19,6 +19,9 @@ satmon for Satureja montana, aursax for Aurinia saxatilis etc}
 \item{species_column_name}{column name (character) as in .gpkg file from
 where species data will be extracted. Default value is "spec"}
 
+\item{species_gpkg}{path to Geopackage file where the data on species
+presences and absences are stored}
+
 \item{env_layers}{environmental layers (raster stack) that is the result
 of running create_env_stack function}
 

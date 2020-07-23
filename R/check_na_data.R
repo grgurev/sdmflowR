@@ -8,6 +8,8 @@
 #' satmon for Satureja montana, aursax for Aurinia saxatilis etc
 #' @param species_column_name column name (character) as in .gpkg file from
 #' where species data will be extracted. Default value is "spec"
+#' @param species_gpkg path to Geopackage file where the data on species
+#' presences and absences are stored
 #' @param env_layers environmental layers (raster stack) that is the result
 #' of running create_env_stack function
 #' @param remove optional value (boolean) to choose if removal of NAs will
@@ -16,6 +18,7 @@
 #' @return Data table object
 #' @export
 #' @importFrom magrittr "%>%"
+#' @importFrom stats "complete.cases"
 #' @import data.table
 
 check_na_data = function(
@@ -44,12 +47,16 @@ check_na_data = function(
       y = species_points,
       sp = TRUE
     ) %>%
-      data.table::as.data.table()
+      as.data.table()
   )
 
   # perform check for NAs/removal of NAs
   if (remove == TRUE) {
     cat("\nRemoving NAs from species data ... \n")
+
+    coords.x1 = NULL
+    coords.x2 = NULL
+
     species_points_extracted[
       complete.cases(species_points_extracted[
         , .SD, .SDcols = names(env_layers)])] %>%
