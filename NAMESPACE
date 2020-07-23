@@ -3,6 +3,8 @@
 export(check_na_data)
 export(create_env_stack)
 export(prepare_rasters)
+export(prepare_species_data)
 import(data.table)
 importFrom(magrittr,"%>%")
 importFrom(sp,"spTransform")
+importFrom(stats,"complete.cases")

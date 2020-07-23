@@ -1,6 +1,6 @@
 Package: sdmflowR
 Title: What the Package Does (One Line, Title Case)
-Version: 0.0.0.9004
+Version: 0.0.0.9005
 Authors@R: 
     person(given = "Marin",
            family = "Grgurev",
@@ -23,4 +23,5 @@ Imports:
     magrittr,
     sp,
     sf,
-    data.table
+    data.table,
+    spThin
