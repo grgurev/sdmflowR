@@ -25,4 +25,5 @@ Imports:
     sf,
     data.table,
     spThin,
-    lwgeom
+    lwgeom,
+    biomod2

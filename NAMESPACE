@@ -2,6 +2,7 @@
 
 export(check_na_data)
 export(create_env_stack)
+export(create_models)
 export(prepare_rasters)
 export(prepare_species_data)
 import(data.table)
