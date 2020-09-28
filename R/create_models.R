@@ -62,6 +62,7 @@ create_models = function(
 
   model_out = biomod2::BIOMOD_Modeling(
     data,
+    models.options = biomod_options,
     models = method,
     NbRunEval = nb_run_eval,
     DataSplit = 70,
