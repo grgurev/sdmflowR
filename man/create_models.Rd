@@ -13,8 +13,8 @@ create_models(
 )
 }
 \arguments{
-\item{data}{(object), Biomod formatted data  that is produced as result from
-BIOMOD_FormattingData() function}
+\item{data}{(Biomod formatting object), Biomod formatted data  that is
+produced as result from BIOMOD_FormattingData() function}
 
 \item{method}{(character), modelling  method used to create model}
 

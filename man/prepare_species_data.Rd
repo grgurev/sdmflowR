@@ -7,16 +7,16 @@
 prepare_species_data(species, species_column_name = "spec", mask, env_layers)
 }
 \arguments{
-\item{species}{name (character) used in project. For example:
+\item{species}{(character), name used in project. For example:
 satmon for Satureja montana, aursax for Aurinia saxatilis etc.}
 
-\item{species_column_name}{column name (character) as in .gpkg file from
+\item{species_column_name}{(character), column name  as in .gpkg file from
 where species data will be extracted. Default value is "spec"}
 
 \item{mask}{sf polygon object with specific areas from where pseudoabsences
 will be extracted}
 
-\item{env_layers}{environmental layers (raster stack) that is the result
+\item{env_layers}{(raster stack), environmental layers  that is the result
 of running create_env_stack function}
 }
 \value{

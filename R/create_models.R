@@ -6,8 +6,8 @@
 #' functions BIOMOD_Modeling() and BIOMOD_EnsembleModeling() to produce models
 #' with consistent naming.
 #'
-#' @param data (object), Biomod formatted data  that is produced as result from
-#' BIOMOD_FormattingData() function
+#' @param data (Biomod formatting object), Biomod formatted data  that is
+#' produced as result from BIOMOD_FormattingData() function
 #' @param method (character), modelling  method used to create model
 #' @param eval_metric_quality_threshold (number) If not NULL, the minimum scores below
 #' which models will be excluded of the ensemble-models building

@@ -6,13 +6,13 @@
 #' when) modeling with ~1km pixel size. It is assumed that in wd the directory
 #' containing Geopackage file with species data is present.
 #'
-#' @param species name (character) used in project. For example:
+#' @param species (character), name used in project. For example:
 #' satmon for Satureja montana, aursax for Aurinia saxatilis etc.
-#' @param species_column_name column name (character) as in .gpkg file from
+#' @param species_column_name (character), column name  as in .gpkg file from
 #' where species data will be extracted. Default value is "spec"
 #' @param mask sf polygon object with specific areas from where pseudoabsences
 #' will be extracted
-#' @param env_layers environmental layers (raster stack) that is the result
+#' @param env_layers (raster stack), environmental layers  that is the result
 #' of running create_env_stack function
 #'
 #' @return Data table object
