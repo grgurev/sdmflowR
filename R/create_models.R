@@ -91,4 +91,6 @@ create_models = function(
     prob.mean.weight.decay = "proportional",
     VarImport = 3
   )
+
+  return(list(model_out, emodel_out))
 }
