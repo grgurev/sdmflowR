@@ -27,7 +27,7 @@ prepare_rasters = function(folder_in, folder_out = folder_in, extent, ref_raster
   . = NULL
 
   # create folder (if provided) for storing rasters
-  ifelse(!dir.exists(folder_out), dir.create(folder_out), FALSE)
+  ifelse(!dir.exists(folder_out), dir.create(folder_out, recursive = TRUE), FALSE)
 
   # default projection is WGS84
   default_proj = "+proj=longlat +datum=WGS84"
